@@ -1,0 +1,340 @@
+{
+  "Routes": [
+
+    {
+      "DownstreamPathTemplate": "/api/Auth/Login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8111
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Login",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    //*************************
+    {
+      "DownstreamPathTemplate": "/api/Auth/Register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8111
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Register",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    //*****************************
+
+
+    {
+      "DownstreamPathTemplate": "/api/Airline/AddAirline",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AddAirline",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+
+    //*****************************
+
+
+
+    {
+      "DownstreamPathTemplate": "/api/Airline/AddInventory",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AddInventory",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+
+    //*****************************
+
+    {
+      "DownstreamPathTemplate": "/api/Booking/Ticket",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2222
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Ticket",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+
+    //*****************************
+
+    {
+      "DownstreamPathTemplate": "/api/Booking/History",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2222
+        }
+      ],
+      "UpstreamPathTemplate": "/api/History",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+
+    //*****************************
+
+    {
+      "DownstreamPathTemplate": "/api/Booking/Cancel",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2222
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Cancel",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+
+    //************************************************
+
+
+
+    {
+      "DownstreamPathTemplate": "/api/Booking/DownloadTicket",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2222
+        }
+      ],
+      "UpstreamPathTemplate": "/api/DownloadTicket",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    //****************************************************
+    {
+      "DownstreamPathTemplate": "/api/Booking/AllHistory",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2222
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AllHistory",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+
+    //****************************************************
+
+    {
+      "DownstreamPathTemplate": "/api/Booking/ManageBooking",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2222
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ManageBooking",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+
+    //****************************************************
+
+    {
+      "DownstreamPathTemplate": "/api/Airline/AddDiscount",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AddDiscount",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    //****************************************************
+
+    {
+      "DownstreamPathTemplate": "/api/Airline/ShowDiscount",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ShowDiscount",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+
+    //****************************************************
+
+    {
+      "DownstreamPathTemplate": "/api/Booking/ManageHistory",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2222
+        }
+      ],
+      "UpstreamPathTemplate": "/api/ManageHistory",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    //*******************************************************
+
+    {
+      "DownstreamPathTemplate": "/api/Booking/SearchManageHistory",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 2222
+        }
+      ],
+      "UpstreamPathTemplate": "/api/SearchManageHistory",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    //****************************************************
+    {
+      "DownstreamPathTemplate": "/api/Airline/AllInventory",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AllInventory",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    "",
+
+    //****************************************************
+    {
+      "DownstreamPathTemplate": "/api/Airline/Consumer",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Consumer",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+  
+
+
+    //****************************************************
+
+    //****************************************************
+    {
+      "DownstreamPathTemplate": "/api/Airline/AllAirline",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/AllAirline",
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+
+    //***********************************************
+
+
+
+    {
+      "DownstreamPathTemplate": "/api/Airline/BlockAirline",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/BlockAirline",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    //***********************************************
+    {
+      "DownstreamPathTemplate": "/api/Airline/UnBlockAirline",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/UnBlockAirline",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    //***********************************************
+
+    {
+      "DownstreamPathTemplate": "/api/Airline/BlockInventory",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/BlockInventory",
+      "UpstreamHttpMethod": [ "Post" ]
+    },
+
+    //***********************************************
+
+    {
+      "DownstreamPathTemplate": "/api/Airline/SearchFlight",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 8000
+        }
+      ],
+      "UpstreamPathTemplate": "/api/SearchFlight",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+
+
+
+
+
+  ],
+  "GlobalConfiguration": {
+    "RequestIdKey": "OcRequestId",
+    "AdministrationPath": "/administration"
+  }
+}
